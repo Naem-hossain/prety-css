@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRETY-CSS</title>
+    <style>
+      .container {
+        max-width: 75%;
+        margin: auto;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        background-color: aquamarine;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+      .grid-item {
+        background-color: #d2bcc3;
+        grid-column: span 5;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      .div-item {
+        margin: 5px;
+      }
+      .grid-item:hover {
+        background-color: #e25909dd;
+      }
+      .footer {
+        grid-column: span 12;
+        height: 50px;
+        margin: 15px;
+        text-align: center;
+        background-color: beige;
+        border-radius: 10px;
+      }
+
+      .head {
+        grid-column: span 12;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        margin-bottom: 10px;
+      }
+      nav ul {
+        padding: 10px;
+        text-align: center;
+      }
+      nav ul li {
+        display: inline;
+        margin: auto;
+        padding: 10px;
+      }
+      nav ul li a {
+        text-decoration: none;
+      }
+
+      nav ul li:hover {
+        background-color: ghostwhite;
+        border-radius: 10px;
+      }
+      @media screen and (max-width: 768px) {
+        .container {
+          background-color: rgb(255, 0, 217);
+        }
+        .grid-item {
+          grid-column: span 12;
+        }
+      }
+      .grid-number{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .number{
+        background-color: aqua;
+        height: 50px;
+        width: 50px;
+        margin-bottom: 15px;
+        padding: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* .grid-number{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        justify-items: center;
+        
+
+      }
+      .number{
+        background-color: tomato;
+        height: 50px;
+        width: 50px;
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="grid-number">
+      <div class="number">1</div>
+      <div class="number">2</div>
+      <div class="number">3</div>
+      <div class="number">4</div>
+      <div class="number">5</div>
+    </div>
+    <div class="container">
+      <nav class="head">
+        <ul>
+          <li><a href=""> MENU </a></li>
+          <li><a href=""> ABOUT </a></li>
+          <li><a href=""> PROFILE </a></li>
+        </ul>
+      </nav>
+
+      <div class="grid-item big">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti
+        eaque, dolore impedit, cupiditate rerum maiores a laboriosam quo velit
+        ipsam, asperiores dolores nostrum ullam dolor deserunt animi dicta.
+        Tenetur a accusamus ab harum nesciunt facilis doloribus excepturi
+        reiciendis delectus ducimus cum, consectetur magni aspernatur expedita
+        similique consequatur necessitatibus laborum?
+      </div>
+      <div class="grid-item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti
+        eaque, dolore impedit, cupiditate rerum maiores a laboriosam quo velit
+        ipsam, asperiores dolores nostrum ullam dolor deserunt animi dicta.
+        Tenetur a accusamus ab harum nesciunt facilis doloribus excepturi
+        reiciendis delectus ducimus cum, consectetur magni aspernatur expedita
+        similique consequatur necessitatibus laborum?
+      </div>
+      <div class="grid-item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti
+        eaque, dolore impedit, cupiditate rerum maiores a laboriosam quo velit
+        ipsam, asperiores dolores nostrum ullam dolor deserunt animi dicta.
+        Tenetur a accusamus ab harum nesciunt facilis doloribus excepturi
+        reiciendis delectus ducimus cum, consectetur magni aspernatur expedita
+        similique consequatur necessitatibus laborum?
+      </div>
+      <div class="grid-item big">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti
+        eaque, dolore impedit, cupiditate rerum maiores a laboriosam quo velit
+        ipsam, asperiores dolores nostrum ullam dolor deserunt animi dicta.
+        Tenetur a accusamus ab harum nesciunt facilis doloribus excepturi
+        reiciendis delectus ducimus cum, consectetur magni aspernatur expedita
+        similique consequatur necessitatibus laborum?
+      </div>
+      <div class="grid-item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti
+        eaque, dolore impedit, cupiditate rerum maiores a laboriosam quo velit
+        ipsam, asperiores dolores nostrum ullam dolor deserunt animi dicta.
+        Tenetur a accusamus ab harum nesciunt facilis doloribus excepturi
+        reiciendis delectus ducimus cum, consectetur magni aspernatur expedita
+        similique consequatur necessitatibus laborum?
+      </div>
+      <div class="grid-item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti
+        eaque, dolore impedit, cupiditate rerum maiores a laboriosam quo velit
+        ipsam, asperiores dolores nostrum ullam dolor deserunt animi dicta.
+        Tenetur a accusamus ab harum nesciunt facilis doloribus excepturi
+        reiciendis delectus ducimus cum, consectetur magni aspernatur expedita
+        similique consequatur necessitatibus laborum?
+      </div>
+      <div class="grid-item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti
+        eaque, dolore impedit, cupiditate rerum maiores a laboriosam quo velit
+        ipsam, asperiores dolores nostrum ullam dolor deserunt animi dicta.
+        Tenetur a accusamus ab harum nesciunt facilis doloribus excepturi
+        reiciendis delectus ducimus cum, consectetur magni aspernatur expedita
+        similique consequatur necessitatibus laborum?
+      </div>
+      <div class="footer"><p>copyright by Nayeem 2022</p></div>
+    </div>
+  </body>
+</html>
